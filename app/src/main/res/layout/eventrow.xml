@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="100dp"
+    android:descendantFocusability="blocksDescendants">
+
+
+            <TextView
+                android:drawableLeft="@drawable/ic_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_start"
+                android:textColor="@color/default_text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:drawableLeft="@drawable/ic_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:id="@+id/numOfPeople"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/default_text"
+                android:layout_alignRight="@+id/date_start"
+                android:layout_below="@+id/date_start"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eventTitle"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textColor="@color/default_text"
+                android:layout_toRightOf="@+id/date_start"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:textColor="@color/default_text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_toRightOf="@+id/numOfPeople"
+                android:layout_toLeftOf="@+id/location"
+                android:layout_below="@+id/eventTitle"/>
+
+
+            <TextView
+                android:drawableLeft="@drawable/ic_location_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:textColor="@color/default_text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+            <TextView
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/location"
+                android:layout_below="@+id/location"
+                android:textColor="@color/default_text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/event_price"/>
+            <TextView
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/location"
+                android:layout_below="@+id/event_price"
+                android:id="@+id/age"
+                android:textColor="@color/default_text"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Eatapp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Info</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="EventTitle">Enter event title</string>
+    <string name="EventDescription">Enter a description</string>
+    <string name="pick_time">Choose time</string>
+    <string name="publishevent">Publish event</string>
+    <string name="create_event">Create EatApp event</string>
+    <string name="pick_date">Choose date</string>
+    <string name="saveLoginCheckBox">Remember me</string>
+    <string name="register">Register</string>
+    <string name="setBirthday">Select your birthday</string>
+</resources>

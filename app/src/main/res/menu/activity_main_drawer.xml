@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/drawer_menu">
+        <item
+            android:id="@+id/showEventsItem"
+            android:icon="@drawable/ic_restaurant"
+            android:title="Show events close by"/>
+        <item
+            android:id="@+id/createNewEventItem"
+            android:icon="@drawable/ic_restaurant"
+            android:title="Create a new EatUp!"/>
+        <item
+            android:id="@+id/showMyProfileItem"
+            android:icon="@drawable/ic_person"
+            android:title="My Profile" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_input"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

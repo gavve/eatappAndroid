@@ -1,0 +1,156 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jacob.eatapp.EventDetail"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="@dimen/fab_margin"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/hostDate"
+        android:id="@+id/hostBackgroundLayout"
+        ></View>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/hostBackgroundLayout"
+        android:id="@+id/whiteLine"></View>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/fab_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Host"
+        android:textColor="@color/default_text"
+        android:id="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/hostProfilePicture"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/fab_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/hostProfilePicture"
+        android:textColor="@color/default_text"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fab_margin"
+        android:id="@+id/hostAge"
+        android:layout_below="@id/hostName"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/hostProfilePicture"
+        android:textColor="@color/default_text"
+        android:text=""
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/fab_margin"
+        android:id="@+id/hostLocation"
+        android:layout_below="@id/hostAge"
+        android:textColor="@color/default_text"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/hostProfilePicture"
+        android:text=""
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:drawableLeft="@drawable/ic_today"
+        android:layout_below="@+id/hostProfilePicture"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostDate"
+        android:textColor="@color/default_text"
+        android:textStyle="bold"
+        android:padding="@dimen/fab_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hostProfilePicture"
+        android:layout_toRightOf="@+id/hostDate"
+        android:textColor="@color/default_text"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:padding="@dimen/fab_margin"
+        android:id="@+id/event_price"/>
+
+    <TextView
+        android:layout_alignBaseline="@+id/hostDate"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hostNumOfPeople"
+        android:textColor="@color/default_text"
+        android:textStyle="bold"
+        android:padding="@dimen/fab_margin"/>
+
+
+<TextView
+    android:layout_below="@+id/hostDate"
+    android:layout_marginTop="@dimen/fab_margin"
+    android:layout_centerInParent="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/default_text"
+    android:id="@+id/hostDescription"
+    android:paddingLeft="@dimen/fab_margin"
+    android:paddingRight="@dimen/fab_margin"/>
+
+<TextView
+    android:layout_below="@+id/hostDescription"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/fab_margin"
+    android:textColor="@color/default_text"
+    android:textAppearance="?android:textAppearanceLarge"
+    android:layout_alignParentLeft="true"
+    android:text="Participants"
+    android:id="@+id/participantsText"
+    android:layout_marginTop="@dimen/fab_margin"/>
+        
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/joinEvent"
+    android:layout_toRightOf="@+id/participantsText"
+    android:layout_below="@+id/hostDescription"
+    android:layout_alignBaseline="@+id/participantsText"
+    android:layout_alignParentRight="true"
+    android:text="Join Event"
+    android:singleLine="true"
+    style="@android:style/Widget.DeviceDefault.Button.Borderless" />
+
+<ListView
+    android:layout_below="@+id/participantsText"
+    android:padding="@dimen/fab_margin"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:id="@+id/hostParticipants"></ListView>
+
+</RelativeLayout>
+
+</ScrollView>
